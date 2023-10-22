@@ -9,6 +9,63 @@ body {
     color: #171717;
 }
 
+/* ***** Header ***** */
+
+header {
+    padding: 10px;
+}
+
+header > div {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h1 > a,
+h1 > a:visited {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#navigation {
+    background-color: var(--secondary-color);
+    display: none; /* flex default */
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    position: fixed;
+    top:0; bottom: 0;
+    left: 0; right: 0;
+    padding: 10px;
+    transform: translate(0, 0);
+}
+
+#navigation:target {
+    display: flex;
+    transform: translate(0, 0);
+}
+
+#navigation li:first-child {
+    align-self: flex-end;
+}
+
+#navigation li:not(:first-child) a {
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+
+#navigation a,
+#navigation a:visited {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 /* ***** Footer ***** */
 
 footer {
