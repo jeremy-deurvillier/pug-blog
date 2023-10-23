@@ -1,18 +1,17 @@
 header
-    div
-        h1
+    div(class='uk-flex uk-flex-between uk-padding-small')
+        h1(class='uk-h2')
             a(href='/') Jérémy Deurvillier
         nav
-            a(href='#navigation', id='openNavigation')
-                i(class='fa fa-bars fa-lg' aria-hidden='true')
-            ul(id='navigation')
-                li
-                    a(href='#', id='closeNavigation')
-                        i(class='fa fa-times fa-lg' aria-hidden='true')
-                li
-                    a(href='/') Accueil
-                li
-                    a(href='/about') A propos
-                li
-                    a(href='/contact') Contact
+            button(type='button', class='uk-button uk-button-link', data-uk-toggle='target:#navigation')
+                i(class='fa fa-bars fa-lg', aria-hidden='true')
+            div(id='navigation', data-uk-offcanvas='overlay:true')
+                div(class='uk-offcanvas-bar uk-flex uk-flex-column')
+                    ul(class='uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical')
+                        li
+                            a(href='/') Accueil
+                        li
+                            a(href='/about') A propos
+                        li
+                            a(href='/contact') Contact
     h2=title

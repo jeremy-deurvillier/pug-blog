@@ -10,7 +10,15 @@ app.set('views', './src/views') // Node server launched on parent folder
 app.set('view engine', 'pug')
 
 // Commons middlewares
-app.use(helmet())
+app.use(helmet(
+    {
+        contentSecurityPolicy: {
+            directives: {
+                "script-src": ["'self'", "https://cdn.jsdelivr.net"],
+            },
+        },
+    }
+))
 app.use(express.static('src/public'))
 
 // Routes definition
