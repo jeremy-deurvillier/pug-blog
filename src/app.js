@@ -1,6 +1,6 @@
 import express from 'express'
 import helmet from 'helmet'
-import blog from './controllers/blog.js'
+import blog from './routers/BlogRouter.js'
 
 const app = express()
 const port = process.env.PORT || 3000
