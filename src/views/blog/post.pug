@@ -1,0 +1,11 @@
+div.uk-padding-small
+    article(class='uk-card uk-card-default')
+        div.uk-card-header
+            div.uk-grid-small.uk-flex-middle(data-uk-grid='')
+                div.uk-width-auto
+                    div.uk-width-expand
+                        h4.uk-card-title.uk-margin-remove-bottom= post.title
+        div.uk-card-body
+            p= post.description
+        div.uk-card-footer
+            a.uk-button.uk-button-text(href='/posts/' + post.slug) Lire l'article
