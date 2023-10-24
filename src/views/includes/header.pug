@@ -1,19 +1,19 @@
 header
-    div(class='uk-flex uk-flex-between uk-padding-small')
-        h1(class='uk-h2')
+    div.uk-flex.uk-flex-between.uk-flex-middle.uk-padding-small
+        h1.uk-h2.uk-margin-remove-bottom
             a(href='/') Jérémy Deurvillier
         nav
             button(type='button', class='uk-button uk-button-link', data-uk-toggle='target:#navigation')
                 i(class='fa fa-bars fa-lg', aria-hidden='true')
             div(id='navigation', data-uk-offcanvas='overlay:true')
-                div(class='uk-offcanvas-bar uk-flex uk-flex-column')
-                    ul(class='uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical')
+                div.uk-offcanvas-bar.uk-flex.uk-flex-column
+                    ul.uk-nav.uk-nav-primary.uk-nav-center.uk-margin-auto-vertical
                         li
                             a(href='/') Accueil
                         li
                             a(href='/about') A propos
                         li
                             a(href='/contact') Contact
-    div
+    div.uk-background-muted.uk-height-medium.uk-flex.uk-flex-column.uk-flex-center
         h2.uk-text-center= title
         h3.uk-text-center= subtitle
